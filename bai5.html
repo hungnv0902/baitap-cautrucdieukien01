@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Điểm kiểm tra :'));
+    let b = parseInt(prompt('Điểm thi giữa kỳ :'));
+    let c = parseInt(prompt('Điểm thi cuối kỳ :'));
+    let medium = (a + b*2 + c*3 )/6;
+    if (medium >= 8) {
+            alert('Học lực giỏi')
+        } else if(medium < 8 && medium >= 6.5) {
+            alert('Học lực khá')
+        } else if(medium < 6.5 && medium >= 5) {
+            alert('Học lực trung bình')
+        } else if(medium < 5) {
+            alert('Học lực yếu')
+        }
+
+</script>
+</body>
+</html>

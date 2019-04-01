@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /* Hoa hồng = 1% nếu doanh số 1-100tr
+           Hoa hồng = 2% nếu doanh số là 100tr -200tr
+           Hoa hồng = 3% nếu doanh số là 200tr - 300tr
+           Hoa hồng = 4% nếu doanh số là 300tr - 500tr
+           Hoa hồng = 5% nếu doanh số 500tr trở lên
+         */
+        let bulk = parseInt(prompt('Nhập doanh số: '));
+        if (bulk < 100000000) {
+           var rew =  bulk*0.01;
+        } else if(bulk >= 100000000 && bulk < 200000000) {
+            var rew = bulk*0.02;
+        } else if(200000000 <= bulk && bulk < 300000000) {
+            var rew = bulk*0.03;
+        } else if(300000000 <= bulk && bulk < 500000000) {
+            var rew = bulk*0.04
+        } else if(500000000<= bulk) {
+            var rew = bulk*0.05
+        }
+
+        alert('Hoa hồng là : ' + rew)
+    </script>
+</body>
+</html>
